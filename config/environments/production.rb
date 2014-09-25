@@ -1,6 +1,11 @@
 ThermicWhims::Application.configure do
   # Settings specified here will take precedence over those in config/application.rb.
 
+  #TODO:  
+
+  #devise needs config.action_mailer.default_url_options = { :host => 'localhost:3000' }
+  #with the "actual host of your application"
+  
   # Code is not reloaded between requests.
   config.cache_classes = true
 
