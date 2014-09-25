@@ -1,0 +1,12 @@
+
+development:
+  adapter: postgresql
+  database: thermic_whims_development
+
+test:
+  adapter: postgresql
+  database: thermic_whims_test
+
+production:
+  adapter: postgresql
+  database: thermic_whims_production
