@@ -1,8 +1,8 @@
-<div class="video-page-wrapper">
+<div id="video-page">
 
 	<ul class="videos">
 		<% @videos.each_with_index do |video, i| %>
-		<li id="<%= i %>" class=<%= i.odd? ? "nudge-video-left" : "" %> ><iframe width="480" height="315" src="<%= video.url %>" frameborder="0" allowfullscreen></iframe></li>
+		<li><iframe width="240" height="160" src="<%= video.construct_embed_url %>" frameborder="0" allowfullscreen></iframe></li>
 		<% end %>
 	</ul>
 
