@@ -3,15 +3,48 @@
 	padding: 0;
 }
 
+@font-face {
+	font-family: "Bebas Neue";
+	src: url(/assets/fonts/BebasNeue.otf) format("opentype");
+}
+
+body {
+	background-color: #501500;
+}
+
 article {
 	width: 960px;
 	margin: 0 auto;
+	background-color: #fff;
 }
 
-.nav {
+#logo {
+	display: block;
+	margin-left: auto;
+	margin-right: auto;
+}
+
+ul.nav {
 	list-style-type: none;
 }
 
+ul.nav li {
+	display: inline;
+	font-family: "Bebas Neue";
+}
+
+ul.videos {
+	list-style-type: none;
+}
+
+ul.videos li {
+	display: inline-block;
+	-webkit-filter: brightness(0.3);
+}
+
+ul.videos li:hover {
+	-webkit-filter: brightness(1);
+}
 h1 {
 	color: blue;
 }
