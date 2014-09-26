@@ -1,7 +1,11 @@
 <div class="video-page-wrapper">
 
 	<ul class="videos">
-		<% video = videos.delete_at(0) %>
+		<% @videos.each_with_index do |video, i| %>
 		<li id="<%= i %>" class=<%= i.odd? ? "nudge-video-left" : "" %> ><iframe width="480" height="315" src="<%= video.url %>" frameborder="0" allowfullscreen></iframe></li>
+		<% end %>
 	</ul>
+
+	<%= will_paginate @videos %>
+
 </div>
