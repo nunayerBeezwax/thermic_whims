@@ -1,4 +1,4 @@
-<div class="home-videos">
+<div class="home-page-wrapper">
 
 	<ul class="videos">
 		<% videos = @videos.shuffle %> 
@@ -7,7 +7,4 @@
 			<li id="<%= i %>" class=<%= i.odd? ? "nudge-video-left" : "" %> ><iframe width="480" height="315" src="<%= video.url %>" frameborder="0" allowfullscreen></iframe></li>
 		<% end %>
 	</ul>
-
-
-		<li class="nudge-video-left"><iframe width="480" height="315" src="//www.youtube.com/embed/v09vvwqBmgk" frameborder="0" allowfullscreen></iframe></li>
 </div>
