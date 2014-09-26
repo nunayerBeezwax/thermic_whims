@@ -14,6 +14,11 @@
 		<%= image_tag "logo.jpg", id: "logo" %>
 
 		<ul class="nav">
+		  <li><%= link_to "Home", root_path %></li>
+		  <li><%= link_to "Memes", root_path %></li>
+		  <li><%= link_to "Fountains", root_path %></li>
+		  <li><%= link_to "Links", root_path %></li>
+		  <li><%= link_to "Account", root_path %></li>
 		  <%= render 'devise/menu/registration_items' %>
 		  <%= render 'devise/menu/login_items' %>
 		</ul>
