@@ -25,7 +25,7 @@ ul.nav {
 	list-style-type: none;
 	display:table;
 	width: 100%;
-	padding-top: 20px;
+	padding: 20px 0 20px 0;
 }
 
 ul.nav li {
@@ -69,11 +69,24 @@ a:hover {
 	margin-left: -4px;
 }
 
+#video-page ul.videos {
+	list-style-type: none;
+	display:inline-block;
+	width:100%;
+	text-align: center;
+}
+
+#video-page ul.videos li {
+	width: 33.333%;
+	float: left;
+	padding-bottom: 20px;
+}
 .pagination {
   background: #ffa487;
   border: 1px solid #e5e5e5;
   text-align: center;
   padding: 1em;
+  font-family: "Bebas Neue";
   cursor: default; }
   .pagination a, .pagination span {
     padding: 0.2em 0.3em; }
