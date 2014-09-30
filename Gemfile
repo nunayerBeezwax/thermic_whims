@@ -35,6 +35,8 @@ gem 'rails_admin'
 
 gem 'protected_attributes'
 
+gem 'rails_12factor', group: :production
+
 # Use ActiveModel has_secure_password
 # gem 'bcrypt', '~> 3.1.7'
 
@@ -46,3 +48,5 @@ gem 'protected_attributes'
 
 # Use debugger
 # gem 'debugger', group: [:development, :test]
+
+gem 'ruby', '2.1.3'
