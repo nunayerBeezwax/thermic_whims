@@ -11,10 +11,23 @@
 #
 # It's strongly recommended that you check this file into your version control system.
 
-ActiveRecord::Schema.define(version: 20140926073458) do
+ActiveRecord::Schema.define(version: 20140930140640) do
 
   # These are extensions that must be enabled in order to support this database
   enable_extension "plpgsql"
+
+  create_table "fountains", force: true do |t|
+    t.string "name"
+    t.string "department"
+    t.string "pic_url"
+    t.string "homepage_url"
+    t.string "dates"
+  end
+
+  create_table "fountains_videos", force: true do |t|
+    t.integer "fountain_id"
+    t.integer "video_id"
+  end
 
   create_table "users", force: true do |t|
     t.string   "email",                  default: "", null: false
