@@ -11,7 +11,7 @@
 #
 # It's strongly recommended that you check this file into your version control system.
 
-ActiveRecord::Schema.define(version: 20140930140640) do
+ActiveRecord::Schema.define(version: 20140930142652) do
 
   # These are extensions that must be enabled in order to support this database
   enable_extension "plpgsql"
@@ -24,9 +24,19 @@ ActiveRecord::Schema.define(version: 20140930140640) do
     t.string "dates"
   end
 
+  create_table "fountains_memes", force: true do |t|
+    t.integer "fountain_id"
+    t.integer "meme_id"
+  end
+
   create_table "fountains_videos", force: true do |t|
     t.integer "fountain_id"
     t.integer "video_id"
+  end
+
+  create_table "memes", force: true do |t|
+    t.text   "text"
+    t.string "source_url"
   end
 
   create_table "users", force: true do |t|
