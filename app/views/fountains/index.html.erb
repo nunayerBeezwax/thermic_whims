@@ -1,0 +1,11 @@
+<div id="fountain-page">
+
+	<ul class="fountains">
+		<% @fountains.each do |fountain| %>
+			<p><%= fountain.name %></p>
+		<% end %>
+	</ul>
+
+	<%= will_paginate @fountains %>
+
+</div>

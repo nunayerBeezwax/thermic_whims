@@ -1,0 +1,11 @@
+<div id="meme-page">
+
+	<ul class="memes">
+		<% @memes.each do |meme| %>
+			<p><%= meme.text %></p>
+		<% end %>
+	</ul>
+
+	<%= will_paginate @memes %>
+
+</div>

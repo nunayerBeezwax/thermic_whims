@@ -8,6 +8,8 @@ ThermicWhims::Application.routes.draw do
   root :to => 'home#index'
 
   resources :videos
+  resources :memes
+  resources :fountains
 
   # Example of regular route:
   #   get 'products/:id' => 'catalog#view'
