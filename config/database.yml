@@ -9,4 +9,3 @@ test:
 
 production:
   adapter: postgresql
-  database: thermic_whims_production
