@@ -7,18 +7,45 @@ body {
 	background-color: #380e00;
 }
 
-article {
+a, a:link, a:visited {
+	color: black;
+}
+
+a:hover {
+	color: #ea3d00;
+}
+
+header {
 	width: 960px;
 	margin: 0 auto;
 	background-color: #fff;
+	font-family: Perpetua, Baskerville, "Big Caslon", "Palatino Linotype", Palatino, "URW Palladio L", "Nimbus Roman No9 L", serif;
+	color: #737373;
+	font-size: 0.7em;
 }
 
+#schrodinger {
+	display: inline-block;
+	float: left;
+	width: 29%;
+	padding: 2%;
+}
+
+
 #logo {
-	display: block;
-	margin-left: auto;
-	margin-right: auto;
-	padding-top: 20px;
+	display: inline-block;
+	float: left;
 	zoom: 1.5;
+	padding: 2%;
+	width: 29.5%;
+}
+
+#header-meme {
+	display: inline-block;
+	float: left;
+	padding: 2%;
+	width: 29%;
+	text-align: right;
 }
 
 ul.nav {
@@ -30,7 +57,7 @@ ul.nav {
 
 ul.nav li {
 	display: table-cell;
-	font-family: "Bebas Neue";
+	font-family: "Bebas Neue", "Trebuchet MS", "Lucida Grande", "Lucida Sans Unicode", "Lucida Sans", Tahoma, sans-serif;
 	font-weight: bold;
 	font-size: 22px;
 	color: black;
@@ -42,12 +69,10 @@ ul.nav li a {
 	text-decoration: none;
 }
 
-a, a:link, a:visited {
-	color: black;
-}
-
-a:hover {
-	color: #ea3d00;
+article {
+	width: 960px;
+	margin: 0 auto;
+	background-color: #fff;
 }
 
 #home-page ul.videos {
@@ -81,6 +106,7 @@ a:hover {
 	float: left;
 	padding-bottom: 20px;
 }
+
 .pagination {
   background: #ffa487;
   border: 1px solid #e5e5e5;

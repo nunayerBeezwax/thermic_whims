@@ -9,9 +9,16 @@
 </head>
 <body>
 
-	<article>
+	<header>
+
+		<p id="schrodinger">"There are... organisms so small that they are strongly affected by... the thermic whims of the surrounding medium; they have no choice.  If they had some locomotion of their own they might nevertheless succeed in getting from one place to another-- but with some difficulty, since the heat motion tosses them like a small boat in a rough sea."</br></br>
+		<strong>~ Erwin Schrodinger, "What is Life?"</strong> </p>
 
 		<%= link_to image_tag("logo.jpg", id: "logo"), root_path %>
+
+		<% @meme = Meme.first(:order => "RANDOM()") %>
+
+		<p id="header-meme"><%= @meme.text + " " + @meme.fountains.first.name %></p>
 
 		<ul class="nav">
 		  <li><%= link_to "Home", root_path %></li>
@@ -26,11 +33,13 @@
 		   <p class="notice"><%= notice %></p>
 		   <p class="alert"><%= alert %></p>
 
+	</header>
 
+	<article>
 
 <%= yield %>
 
-   </article>
+	</article>
 
 </body>
 </html>
