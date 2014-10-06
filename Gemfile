@@ -35,6 +35,8 @@ gem 'rails_admin'
 
 gem 'protected_attributes'
 
+gem 'acts-as-taggable-on', '~> 3.4'
+
 group :production do 
 	gem 'rails_12factor'
 end

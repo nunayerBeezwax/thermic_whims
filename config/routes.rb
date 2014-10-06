@@ -10,6 +10,7 @@ ThermicWhims::Application.routes.draw do
   resources :videos
   resources :memes
   resources :fountains
+  resources :works
 
   # Example of regular route:
   #   get 'products/:id' => 'catalog#view'
