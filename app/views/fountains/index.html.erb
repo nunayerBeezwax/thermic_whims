@@ -2,7 +2,9 @@
 
 	<ul class="fountains">
 		<% @fountains.each do |fountain| %>
-			<p><%= fountain.name %></p>
+			<%= link_to(fountain) do %>
+			<li class="fountain"%><span class="fountain-image"><%= image_tag fountain.pic_url %></span><span class="fountain-name"></span><%= fountain.name %><span class="department">~ <%= fountain.department %></span></li>
+			<% end %>
 		<% end %>
 	</ul>
 

@@ -156,6 +156,16 @@ footer {
 	padding-bottom: 20px;
 }
 
+#fountain-page ul.fountains li {
+	display:inline-block;
+	width: 44%;
+	padding: 2%;
+}
+
+#fountain-page ul.fountains li img {
+	width: 30%;
+}
+
 
 
 /* modified cribbed styles from plugins */
