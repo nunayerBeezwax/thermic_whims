@@ -1,0 +1,5 @@
+<%= image_tag @fountain.pic_url %>
+
+<% @fountain.memes.each do |meme| %>
+	<li class="meme" %><%= meme.text %><span class="signature">~ <%= meme.fountains.first.name %></span></li>
+<% end %> 
