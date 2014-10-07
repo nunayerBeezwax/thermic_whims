@@ -10,7 +10,7 @@
 
 	<ul class="memes">
 		<% memes = @memes.shuffle %> 
-		<% memes.count.times do |i| %>
+		<% 6.times do |i| %>
 			<% meme = memes.delete_at(0) %>
 			<li id="<%= i %>" class="meme"%><%= meme.text %><span class="signature">~ <%= meme.fountains.first.name %></span></li>
 		<% end %>

@@ -2,7 +2,7 @@
 
 	<ul class="memes">
 		<% @memes.each do |meme| %>
-			<p><%= meme.text %></p>
+						<li class="meme"%><%= meme.text %><span class="signature">~ <%= meme.fountains.first.name %></span></li>
 		<% end %>
 	</ul>
 
