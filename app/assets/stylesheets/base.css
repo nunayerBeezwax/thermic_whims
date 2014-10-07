@@ -42,6 +42,7 @@ ul.memes {
 }
 
 ul.memes li {
+	padding-top: 1em;
 	padding-bottom: 3.5em;
 	border-bottom: 2px solid rgba(107, 28, 0, 0.5);
 }
@@ -114,7 +115,6 @@ article {
 }
 
 #home-page ul.videos {
-	padding: 0 0 20px 0;
 	list-style-type: none;
 	width: 100%;
 	line-height:0;
@@ -131,6 +131,16 @@ article {
 /* hack alert! don't know why this is necessary */
 #home-page ul.videos li.nudge-video-left {
 	margin-left: -4px;
+}
+
+footer {
+	width: 960px;
+	background-color: #ff7f51;
+	margin: 0 auto;
+	text-align: center;
+	font-family: "Andale Mono", AndaleMono, monospace;
+	line-height: 2em;
+	font-size: 0.7em;
 }
 
 #video-page ul.videos {
