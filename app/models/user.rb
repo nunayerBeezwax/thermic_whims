@@ -7,5 +7,5 @@ class User < ActiveRecord::Base
   has_many :meme_comments
   has_many :video_comments
 
-  attr_accessible :meme_comment_ids, :video_comment_ids
+  attr_accessible :meme_comment_ids, :video_comment_ids, :email, :password, :password_confirmation
 end
