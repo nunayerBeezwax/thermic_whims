@@ -16,10 +16,9 @@
 
 		<%= link_to image_tag("logo.jpg", id: "logo"), root_path %>
 		
-		<% if @memes.count > 0 %>
-			<% @meme = @memes.shuffle.first %>
-			<p id="header-meme" class="meme"><%= @meme.text %><span class="signature">~ <%= @meme.fountains.first.name %></span></p>
-		<% end %>
+		<% @meme = Meme.first(:order => "RANDOM()") %>
+
+		<p id="header-meme" class="meme"><%= @meme.text %><span class="signature">~ <%= @meme.fountains.first.name %></span></p>
 
 		<ul class="nav">
 		  <li><%= link_to "Home", root_path %></li>
