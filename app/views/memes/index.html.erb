@@ -4,7 +4,7 @@
 		<% @memes.each do |meme| %>
 			<li class="meme"%>
 				<span class="meme-text"><%= meme.text %></span>
-				<span class="signature">~ <%= meme.fountains.first.name %></span></br>
+				<span class="signature">~ <%= link_to meme.fountains.first.name, fountain_path(meme.fountains.first) %></span></br>
 				<span class="meme-tags">
 				<% if meme.tags.count > 0 %>
 					<strong>Tags: </strong> <% meme.tags.each do |tag| %>
