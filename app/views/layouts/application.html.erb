@@ -15,6 +15,7 @@
 		<span class="signature">~ Erwin Schrodinger</span></p>
 
 		<%= link_to image_tag("logo.jpg", id: "logo"), root_path %>
+		
 		<% if Meme.all.count > 0 %>
 			<% @meme = Meme.first(:order => "RANDOM()") %>
 		<% end %>
