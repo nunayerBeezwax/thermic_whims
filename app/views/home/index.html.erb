@@ -1,7 +1,7 @@
 <div id="home-page">
 
 	<ul class="videos">
-		<% if @videos %>
+		<% if @videos.count > 3 %>
 			<% videos = @videos.shuffle %> 
 			<% 4.times do |i| %>
 				<% video = videos.delete_at(0) %>
@@ -11,7 +11,7 @@
 	</ul>
 
 	<ul class="memes">
-		<% if @memes %>
+		<% if @memes.count > 5 %>
 			<% memes = @memes.shuffle %> 
 			<% 6.times do |i| %>
 				<% meme = memes.delete_at(0) %>
