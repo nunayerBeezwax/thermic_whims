@@ -33,6 +33,8 @@ gem 'will_paginate', '~> 3.0'
 
 gem 'rails_admin'
 
+gem 'better_errors'
+
 gem 'protected_attributes'
 
 gem 'acts-as-taggable-on', '~> 3.4'

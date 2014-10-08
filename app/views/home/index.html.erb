@@ -15,7 +15,16 @@
 			<% memes = @memes.shuffle %> 
 			<% 6.times do |i| %>
 				<% meme = memes.delete_at(0) %>
-				<li id="<%= i %>" class="meme"%><%= meme.text %><span class="signature">~ <%= meme.fountains.first.name %></span></li>
+				<li class="meme"%>
+					<span class="meme-text"><%= meme.text %></span>
+					<span class="signature">~ <%= meme.fountains.first.name %></span></br>
+					<span class="meme-tags">
+					<% if meme.tags.count > 0 %>
+						<strong>Tags: </strong> <% meme.tags.each do |tag| %>
+							<%= link_to tag.name, tag_path(tag) %> 
+						<% end %></span>
+					<% end %>
+				</li>
 			<% end %>
 		<% end %>
 	</ul>

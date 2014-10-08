@@ -1,5 +1,4 @@
-<div id="meme-page">
-
+<% @memes.each do |meme| %>
 	<ul class="memes">
 		<% @memes.each do |meme| %>
 			<li class="meme"%>
@@ -14,7 +13,4 @@
 			</li>
 		<% end %>
 	</ul>
-
-	<%= will_paginate @memes %>
-
-</div>
+<% end %>
