@@ -34,6 +34,7 @@ gem 'will_paginate', '~> 3.0'
 gem 'rails_admin'
 
 gem 'better_errors'
+gem 'binding_of_caller'
 
 gem 'protected_attributes'
 

@@ -11,8 +11,8 @@ class Meme < ActiveRecord::Base
 
 	def fountains_enum
 		all_fountains = {}
-		Fountain.all.each_with_index do |f, i|
-			all_fountains[i+1] = f
+		Fountain.all.each do |f|
+			all_fountains[f.id] = f
 		end
 		all_fountains.map{|key, val| [val.name, key]}
 	end
@@ -22,6 +22,7 @@ class Meme < ActiveRecord::Base
     list do 
       field :text
       field :tag_list
+      field :fountains
     end
 
     edit do
