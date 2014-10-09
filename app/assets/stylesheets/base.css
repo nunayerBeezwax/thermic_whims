@@ -7,12 +7,34 @@ body {
 	background-color: #380e00;
 }
 
+article {
+	font-family: "Bebas Neue", "Trebuchet MS", "Lucida Grande", "Lucida Sans Unicode", "Lucida Sans", Tahoma, sans-serif;
+}
+
 .notice {
 	color: #ea3d00;
 	font-weight: bold;
 	font-size: 1.5em;
 	font-family: Baskerville;
 	text-align: right;
+}
+
+form {
+	text-align: center;
+	font-family: "Bebas Neue", "Trebuchet MS", "Lucida Grande", "Lucida Sans Unicode", "Lucida Sans", Tahoma, sans-serif;
+	color: #d23400;
+	background-color: #fff0eb;
+	font-size: 1.2em;
+	border: 2px solid #852100;
+	border-radius: 15px;
+	width: 30%;
+	padding: 1em;
+	margin: 0 auto;
+	box-shadow: 5px 5px 5px #ff4405;
+}
+
+input {
+	margin: 0.5em;
 }
 
 a, a:link, a:visited {
@@ -22,6 +44,15 @@ a, a:link, a:visited {
 
 a:hover {
 	color: #ea3d00;
+}
+
+.button {
+	background-color: #ff4405;
+	color: #ffffff;
+	font-family: "Bebas Neue", "Trebuchet MS", "Lucida Grande", "Lucida Sans Unicode", "Lucida Sans", Tahoma, sans-serif;
+	padding: 0.3em;
+	font-size: 1em;
+	margin: 0.5em;
 }
 
 .meme {
@@ -135,11 +166,6 @@ article {
 #home-page ul.videos li:hover {
 }
 
-/* hack alert! don't know why this is necessary */
-#home-page ul.videos li.nudge-video-left {
-	margin-left: -4px;
-}
-
 footer {
 	width: 960px;
 	background-color: #ff7f51;
@@ -173,7 +199,15 @@ footer {
 	width: 30%;
 }
 
+/* cheats */
 
+.height-spacer {
+	height: 1.5em;
+}
+
+#home-page ul.videos li.nudge-video-left {
+	margin-left: -4px;
+}
 
 /* modified cribbed styles from plugins */
 .pagination {
