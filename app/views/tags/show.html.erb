@@ -1,0 +1,17 @@
+<div class="tag-page">
+	<h1 class="index-title"><%= @tag.name %></h1>
+
+	<% @videos.each do |video| %>
+		<div class="tagged-videos" %><iframe height="240px" width="360px" src="<%= video.construct_embed_url %>" frameborder="0" allowfullscreen></iframe></div>
+	<% end %>
+
+	<% @works.each do |work| %>
+		<%= link_to work.name, work_path(work) %>
+	<% end %>
+
+	<% @memes.each do |meme| %>
+		<li class="meme"%>
+			<span class="meme-text"><%= meme.text %></span>
+			<span class="signature">~ <%= link_to meme.fountains.first.name, fountain_path(meme.fountains.first) %></span></br>	
+	<% end %>
+</div>

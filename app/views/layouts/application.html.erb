@@ -18,7 +18,7 @@
 		
 		<% @meme = Meme.first(:order => "RANDOM()") %>
 
-		<p id="header-meme" class="meme"><%= @meme.text %><span class="signature">~ <%= @meme.fountains.first.name %></span></p>
+		<p id="header-meme" class="meme"><%= @meme.text %><span class="signature">~ <%= link_to @meme.fountains.first.name, fountain_path(@meme.fountains.first) %></span></p>
 
 		<ul class="nav">
 		  <li><%= link_to "Home", root_path %></li>
