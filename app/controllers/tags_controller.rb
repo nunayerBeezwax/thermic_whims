@@ -17,7 +17,7 @@ class TagsController < ApplicationController
 		videos_with_tag = []
 		Video.all.each do |video|
 			if video.tag_list.include?(@tag.name)
-				videos_with_tag << meme
+				videos_with_tag << video
 			end
 		end
 		@videos = videos_with_tag		

@@ -176,6 +176,16 @@ footer {
 	font-size: 0.7em;
 }
 
+.index-title {
+	font-size: 4em;
+	text-align: center;
+	color: #070200;
+	letter-spacing: 0.2em;
+	padding: 0.5em 0 0.5em 0;
+	background: linear-gradient(to bottom, #ff7c52, #fff0eb);
+
+}
+
 #video-page ul.videos {
 	list-style-type: none;
 	display:inline-block;
@@ -184,9 +194,18 @@ footer {
 }
 
 #video-page ul.videos li {
-	width: 33.333%;
+	width: 31%;
 	float: left;
-	padding-bottom: 20px;
+	margin: 6px;
+	border: 5px outset #ff7f51;
+}
+
+#video-page .video-title {
+	font-size: 1.5em;
+}
+
+.video-show iframe {
+	width: 100%;
 }
 
 #fountain-page ul.fountains li {

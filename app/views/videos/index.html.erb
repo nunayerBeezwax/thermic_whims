@@ -1,8 +1,19 @@
 <div id="video-page">
+	<h1 class="index-title">Videos</h1>
 
 	<ul class="videos">
-		<% @videos.each_with_index do |video, i| %>
-		<li><iframe width="240" height="160" src="<%= video.construct_embed_url %>" frameborder="0" allowfullscreen></iframe></li>
+		<% @videos.each do |video| %>
+			<li> <span class="video-title"><%= link_to video.title, video_path(video) %></span>
+			<% if video.fountains.count > 0 %>
+				</br><strong>Fountains:</strong><% video.fountains.each do |fountain| %>
+						<%= link_to fountain.name, fountain_path(fountain) %>
+					<% end %>
+			<% end %>
+			<% if video.tags.count > 0 %>
+				</br><strong>Tags: </strong> <% video.tags.each do |tag| %>
+					<%= link_to tag.name, tag_path(tag) %> 
+				<% end %>
+			<% end %></li>
 		<% end %>
 	</ul>
 
